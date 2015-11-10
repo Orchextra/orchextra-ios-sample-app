@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A92AD9B61BEB9ED7000B0BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9B51BEB9ED7000B0BFD /* main.m */; };
+		A92AD9B91BEB9ED7000B0BFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9B81BEB9ED7000B0BFD /* AppDelegate.m */; };
+		A92AD9BF1BEB9ED7000B0BFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92AD9BD1BEB9ED7000B0BFD /* Main.storyboard */; };
+		A92AD9C11BEB9ED7000B0BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92AD9C01BEB9ED7000B0BFD /* Assets.xcassets */; };
+		A92AD9C41BEB9ED7000B0BFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92AD9C21BEB9ED7000B0BFD /* LaunchScreen.storyboard */; };
+		A92AD9CF1BEB9ED7000B0BFD /* SampleOrchextraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9CE1BEB9ED7000B0BFD /* SampleOrchextraTests.m */; };
+		A92AD9DD1BEB9F3A000B0BFD /* Orchextra.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A92AD9DB1BEB9F3A000B0BFD /* Orchextra.bundle */; };
+		A92AD9DE1BEB9F3A000B0BFD /* Orchextra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92AD9DC1BEB9F3A000B0BFD /* Orchextra.framework */; };
+		A939107A1BEBA76E0096A693 /* BeaconsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A93910581BEBA76E0096A693 /* BeaconsPresenter.m */; };
+		A939107B1BEBA76E0096A693 /* BeaconsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A939105B1BEBA76E0096A693 /* BeaconsTableViewController.m */; };
+		A939107C1BEBA76E0096A693 /* DetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A939105F1BEBA76E0096A693 /* DetailModel.m */; };
+		A939107D1BEBA76E0096A693 /* MainWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = A93910621BEBA76E0096A693 /* MainWireframe.m */; };
+		A939107E1BEBA76E0096A693 /* GeofencesPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A93910661BEBA76E0096A693 /* GeofencesPresenter.m */; };
+		A939107F1BEBA76E0096A693 /* GeofencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93910691BEBA76E0096A693 /* GeofencesViewController.m */; };
+		A93910801BEBA76E0096A693 /* RegionAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A939106B1BEBA76E0096A693 /* RegionAnnotation.m */; };
+		A93910811BEBA76E0096A693 /* RegionDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A939106F1BEBA76E0096A693 /* RegionDetailPresenter.m */; };
+		A93910821BEBA76E0096A693 /* DetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A93910721BEBA76E0096A693 /* DetailCell.m */; };
+		A93910831BEBA76E0096A693 /* NotifyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A93910741BEBA76E0096A693 /* NotifyCell.m */; };
+		A93910841BEBA76E0096A693 /* RegionDetailTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93910761BEBA76E0096A693 /* RegionDetailTableController.m */; };
+		A93910851BEBA76E0096A693 /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93910791BEBA76E0096A693 /* ScannerViewController.m */; };
+		A93910881BEBA7FA0096A693 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93910871BEBA7FA0096A693 /* AdSupport.framework */; };
+		A939108B1BEBA8150096A693 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A939108A1BEBA8150096A693 /* SystemConfiguration.framework */; };
+		A939108D1BEBA81D0096A693 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A939108C1BEBA81D0096A693 /* AVFoundation.framework */; };
+		A939108F1BEBA8230096A693 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A939108E1BEBA8230096A693 /* CoreLocation.framework */; };
+		A93910911BEBA8290096A693 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93910901BEBA8290096A693 /* CoreMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A92AD9CB1BEB9ED7000B0BFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A92AD9A91BEB9ED7000B0BFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A92AD9B01BEB9ED7000B0BFD;
+			remoteInfo = SampleOrchextra;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A92AD9B11BEB9ED7000B0BFD /* SampleOrchextra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleOrchextra.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92AD9B51BEB9ED7000B0BFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A92AD9B71BEB9ED7000B0BFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A92AD9B81BEB9ED7000B0BFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A92AD9BE1BEB9ED7000B0BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A92AD9C01BEB9ED7000B0BFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A92AD9C31BEB9ED7000B0BFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A92AD9C51BEB9ED7000B0BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92AD9CA1BEB9ED7000B0BFD /* SampleOrchextraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleOrchextraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92AD9CE1BEB9ED7000B0BFD /* SampleOrchextraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleOrchextraTests.m; sourceTree = "<group>"; };
+		A92AD9D01BEB9ED7000B0BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92AD9DB1BEB9F3A000B0BFD /* Orchextra.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Orchextra.bundle; sourceTree = "<group>"; };
+		A92AD9DC1BEB9F3A000B0BFD /* Orchextra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Orchextra.framework; sourceTree = "<group>"; };
+		A93910571BEBA76E0096A693 /* BeaconsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconsPresenter.h; sourceTree = "<group>"; };
+		A93910581BEBA76E0096A693 /* BeaconsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconsPresenter.m; sourceTree = "<group>"; };
+		A939105A1BEBA76E0096A693 /* BeaconsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconsTableViewController.h; sourceTree = "<group>"; };
+		A939105B1BEBA76E0096A693 /* BeaconsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconsTableViewController.m; sourceTree = "<group>"; };
+		A939105E1BEBA76E0096A693 /* DetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailModel.h; sourceTree = "<group>"; };
+		A939105F1BEBA76E0096A693 /* DetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailModel.m; sourceTree = "<group>"; };
+		A93910611BEBA76E0096A693 /* MainWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWireframe.h; sourceTree = "<group>"; };
+		A93910621BEBA76E0096A693 /* MainWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWireframe.m; sourceTree = "<group>"; };
+		A93910651BEBA76E0096A693 /* GeofencesPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeofencesPresenter.h; sourceTree = "<group>"; };
+		A93910661BEBA76E0096A693 /* GeofencesPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeofencesPresenter.m; sourceTree = "<group>"; };
+		A93910681BEBA76E0096A693 /* GeofencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeofencesViewController.h; sourceTree = "<group>"; };
+		A93910691BEBA76E0096A693 /* GeofencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeofencesViewController.m; sourceTree = "<group>"; };
+		A939106A1BEBA76E0096A693 /* RegionAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionAnnotation.h; sourceTree = "<group>"; };
+		A939106B1BEBA76E0096A693 /* RegionAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionAnnotation.m; sourceTree = "<group>"; };
+		A939106E1BEBA76E0096A693 /* RegionDetailPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionDetailPresenter.h; sourceTree = "<group>"; };
+		A939106F1BEBA76E0096A693 /* RegionDetailPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionDetailPresenter.m; sourceTree = "<group>"; };
+		A93910711BEBA76E0096A693 /* DetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCell.h; sourceTree = "<group>"; };
+		A93910721BEBA76E0096A693 /* DetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCell.m; sourceTree = "<group>"; };
+		A93910731BEBA76E0096A693 /* NotifyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyCell.h; sourceTree = "<group>"; };
+		A93910741BEBA76E0096A693 /* NotifyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyCell.m; sourceTree = "<group>"; };
+		A93910751BEBA76E0096A693 /* RegionDetailTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionDetailTableController.h; sourceTree = "<group>"; };
+		A93910761BEBA76E0096A693 /* RegionDetailTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionDetailTableController.m; sourceTree = "<group>"; };
+		A93910781BEBA76E0096A693 /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScannerViewController.h; sourceTree = "<group>"; };
+		A93910791BEBA76E0096A693 /* ScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScannerViewController.m; sourceTree = "<group>"; };
+		A93910871BEBA7FA0096A693 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A939108A1BEBA8150096A693 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A939108C1BEBA81D0096A693 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A939108E1BEBA8230096A693 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A93910901BEBA8290096A693 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A92AD9AE1BEB9ED7000B0BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A93910911BEBA8290096A693 /* CoreMotion.framework in Frameworks */,
+				A939108F1BEBA8230096A693 /* CoreLocation.framework in Frameworks */,
+				A939108D1BEBA81D0096A693 /* AVFoundation.framework in Frameworks */,
+				A939108B1BEBA8150096A693 /* SystemConfiguration.framework in Frameworks */,
+				A93910881BEBA7FA0096A693 /* AdSupport.framework in Frameworks */,
+				A92AD9DE1BEB9F3A000B0BFD /* Orchextra.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92AD9C71BEB9ED7000B0BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A92AD9A81BEB9ED7000B0BFD = {
+			isa = PBXGroup;
+			children = (
+				A92AD9B31BEB9ED7000B0BFD /* SampleOrchextra */,
+				A92AD9CD1BEB9ED7000B0BFD /* SampleOrchextraTests */,
+				A92AD9B21BEB9ED7000B0BFD /* Products */,
+				A93910891BEBA8020096A693 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A92AD9B21BEB9ED7000B0BFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A92AD9B11BEB9ED7000B0BFD /* SampleOrchextra.app */,
+				A92AD9CA1BEB9ED7000B0BFD /* SampleOrchextraTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A92AD9B31BEB9ED7000B0BFD /* SampleOrchextra */ = {
+			isa = PBXGroup;
+			children = (
+				A92AD9B71BEB9ED7000B0BFD /* AppDelegate.h */,
+				A92AD9B81BEB9ED7000B0BFD /* AppDelegate.m */,
+				A92AD9DA1BEB9F3A000B0BFD /* OrchextraSDK */,
+				A93910541BEBA76E0096A693 /* Sections */,
+				A92AD9BD1BEB9ED7000B0BFD /* Main.storyboard */,
+				A92AD9C01BEB9ED7000B0BFD /* Assets.xcassets */,
+				A92AD9C21BEB9ED7000B0BFD /* LaunchScreen.storyboard */,
+				A92AD9C51BEB9ED7000B0BFD /* Info.plist */,
+				A92AD9B41BEB9ED7000B0BFD /* Supporting Files */,
+			);
+			path = SampleOrchextra;
+			sourceTree = "<group>";
+		};
+		A92AD9B41BEB9ED7000B0BFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A92AD9B51BEB9ED7000B0BFD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A92AD9CD1BEB9ED7000B0BFD /* SampleOrchextraTests */ = {
+			isa = PBXGroup;
+			children = (
+				A92AD9CE1BEB9ED7000B0BFD /* SampleOrchextraTests.m */,
+				A92AD9D01BEB9ED7000B0BFD /* Info.plist */,
+			);
+			path = SampleOrchextraTests;
+			sourceTree = "<group>";
+		};
+		A92AD9DA1BEB9F3A000B0BFD /* OrchextraSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A92AD9DB1BEB9F3A000B0BFD /* Orchextra.bundle */,
+				A92AD9DC1BEB9F3A000B0BFD /* Orchextra.framework */,
+			);
+			path = OrchextraSDK;
+			sourceTree = "<group>";
+		};
+		A93910541BEBA76E0096A693 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				A93910551BEBA76E0096A693 /* Beacons */,
+				A939105C1BEBA76E0096A693 /* Common */,
+				A93910631BEBA76E0096A693 /* Geofences */,
+				A939106C1BEBA76E0096A693 /* RegionDetail */,
+				A93910771BEBA76E0096A693 /* Scanner */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		A93910551BEBA76E0096A693 /* Beacons */ = {
+			isa = PBXGroup;
+			children = (
+				A93910561BEBA76E0096A693 /* Presenter */,
+				A93910591BEBA76E0096A693 /* View */,
+			);
+			path = Beacons;
+			sourceTree = "<group>";
+		};
+		A93910561BEBA76E0096A693 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A93910571BEBA76E0096A693 /* BeaconsPresenter.h */,
+				A93910581BEBA76E0096A693 /* BeaconsPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A93910591BEBA76E0096A693 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A939105A1BEBA76E0096A693 /* BeaconsTableViewController.h */,
+				A939105B1BEBA76E0096A693 /* BeaconsTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A939105C1BEBA76E0096A693 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A939105D1BEBA76E0096A693 /* Models */,
+				A93910601BEBA76E0096A693 /* Wireframe */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A939105D1BEBA76E0096A693 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A939105E1BEBA76E0096A693 /* DetailModel.h */,
+				A939105F1BEBA76E0096A693 /* DetailModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A93910601BEBA76E0096A693 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				A93910611BEBA76E0096A693 /* MainWireframe.h */,
+				A93910621BEBA76E0096A693 /* MainWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		A93910631BEBA76E0096A693 /* Geofences */ = {
+			isa = PBXGroup;
+			children = (
+				A93910641BEBA76E0096A693 /* Presenter */,
+				A93910671BEBA76E0096A693 /* View */,
+			);
+			path = Geofences;
+			sourceTree = "<group>";
+		};
+		A93910641BEBA76E0096A693 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A93910651BEBA76E0096A693 /* GeofencesPresenter.h */,
+				A93910661BEBA76E0096A693 /* GeofencesPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A93910671BEBA76E0096A693 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A93910681BEBA76E0096A693 /* GeofencesViewController.h */,
+				A93910691BEBA76E0096A693 /* GeofencesViewController.m */,
+				A939106A1BEBA76E0096A693 /* RegionAnnotation.h */,
+				A939106B1BEBA76E0096A693 /* RegionAnnotation.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A939106C1BEBA76E0096A693 /* RegionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A939106D1BEBA76E0096A693 /* Presenter */,
+				A93910701BEBA76E0096A693 /* View */,
+			);
+			path = RegionDetail;
+			sourceTree = "<group>";
+		};
+		A939106D1BEBA76E0096A693 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A939106E1BEBA76E0096A693 /* RegionDetailPresenter.h */,
+				A939106F1BEBA76E0096A693 /* RegionDetailPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A93910701BEBA76E0096A693 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A93910711BEBA76E0096A693 /* DetailCell.h */,
+				A93910721BEBA76E0096A693 /* DetailCell.m */,
+				A93910731BEBA76E0096A693 /* NotifyCell.h */,
+				A93910741BEBA76E0096A693 /* NotifyCell.m */,
+				A93910751BEBA76E0096A693 /* RegionDetailTableController.h */,
+				A93910761BEBA76E0096A693 /* RegionDetailTableController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A93910771BEBA76E0096A693 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				A93910781BEBA76E0096A693 /* ScannerViewController.h */,
+				A93910791BEBA76E0096A693 /* ScannerViewController.m */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		A93910891BEBA8020096A693 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A93910901BEBA8290096A693 /* CoreMotion.framework */,
+				A939108E1BEBA8230096A693 /* CoreLocation.framework */,
+				A939108C1BEBA81D0096A693 /* AVFoundation.framework */,
+				A939108A1BEBA8150096A693 /* SystemConfiguration.framework */,
+				A93910871BEBA7FA0096A693 /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A92AD9B01BEB9ED7000B0BFD /* SampleOrchextra */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92AD9D31BEB9ED7000B0BFD /* Build configuration list for PBXNativeTarget "SampleOrchextra" */;
+			buildPhases = (
+				A92AD9AD1BEB9ED7000B0BFD /* Sources */,
+				A92AD9AE1BEB9ED7000B0BFD /* Frameworks */,
+				A92AD9AF1BEB9ED7000B0BFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleOrchextra;
+			productName = SampleOrchextra;
+			productReference = A92AD9B11BEB9ED7000B0BFD /* SampleOrchextra.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A92AD9C91BEB9ED7000B0BFD /* SampleOrchextraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92AD9D61BEB9ED7000B0BFD /* Build configuration list for PBXNativeTarget "SampleOrchextraTests" */;
+			buildPhases = (
+				A92AD9C61BEB9ED7000B0BFD /* Sources */,
+				A92AD9C71BEB9ED7000B0BFD /* Frameworks */,
+				A92AD9C81BEB9ED7000B0BFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A92AD9CC1BEB9ED7000B0BFD /* PBXTargetDependency */,
+			);
+			name = SampleOrchextraTests;
+			productName = SampleOrchextraTests;
+			productReference = A92AD9CA1BEB9ED7000B0BFD /* SampleOrchextraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A92AD9A91BEB9ED7000B0BFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Judith Medina";
+				TargetAttributes = {
+					A92AD9B01BEB9ED7000B0BFD = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					A92AD9C91BEB9ED7000B0BFD = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = A92AD9B01BEB9ED7000B0BFD;
+					};
+				};
+			};
+			buildConfigurationList = A92AD9AC1BEB9ED7000B0BFD /* Build configuration list for PBXProject "SampleOrchextra" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A92AD9A81BEB9ED7000B0BFD;
+			productRefGroup = A92AD9B21BEB9ED7000B0BFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A92AD9B01BEB9ED7000B0BFD /* SampleOrchextra */,
+				A92AD9C91BEB9ED7000B0BFD /* SampleOrchextraTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A92AD9AF1BEB9ED7000B0BFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92AD9DD1BEB9F3A000B0BFD /* Orchextra.bundle in Resources */,
+				A92AD9C41BEB9ED7000B0BFD /* LaunchScreen.storyboard in Resources */,
+				A92AD9C11BEB9ED7000B0BFD /* Assets.xcassets in Resources */,
+				A92AD9BF1BEB9ED7000B0BFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92AD9C81BEB9ED7000B0BFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A92AD9AD1BEB9ED7000B0BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A939107A1BEBA76E0096A693 /* BeaconsPresenter.m in Sources */,
+				A93910821BEBA76E0096A693 /* DetailCell.m in Sources */,
+				A93910831BEBA76E0096A693 /* NotifyCell.m in Sources */,
+				A93910851BEBA76E0096A693 /* ScannerViewController.m in Sources */,
+				A93910801BEBA76E0096A693 /* RegionAnnotation.m in Sources */,
+				A93910841BEBA76E0096A693 /* RegionDetailTableController.m in Sources */,
+				A939107C1BEBA76E0096A693 /* DetailModel.m in Sources */,
+				A93910811BEBA76E0096A693 /* RegionDetailPresenter.m in Sources */,
+				A92AD9B91BEB9ED7000B0BFD /* AppDelegate.m in Sources */,
+				A939107D1BEBA76E0096A693 /* MainWireframe.m in Sources */,
+				A939107B1BEBA76E0096A693 /* BeaconsTableViewController.m in Sources */,
+				A939107F1BEBA76E0096A693 /* GeofencesViewController.m in Sources */,
+				A939107E1BEBA76E0096A693 /* GeofencesPresenter.m in Sources */,
+				A92AD9B61BEB9ED7000B0BFD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A92AD9C61BEB9ED7000B0BFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92AD9CF1BEB9ED7000B0BFD /* SampleOrchextraTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A92AD9CC1BEB9ED7000B0BFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A92AD9B01BEB9ED7000B0BFD /* SampleOrchextra */;
+			targetProxy = A92AD9CB1BEB9ED7000B0BFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A92AD9BD1BEB9ED7000B0BFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A92AD9BE1BEB9ED7000B0BFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A92AD9C21BEB9ED7000B0BFD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A92AD9C31BEB9ED7000B0BFD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A92AD9D11BEB9ED7000B0BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A92AD9D21BEB9ED7000B0BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A92AD9D41BEB9ED7000B0BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleOrchextra/OrchextraSDK",
+				);
+				INFOPLIST_FILE = SampleOrchextra/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigigo.SampleOrchextra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A92AD9D51BEB9ED7000B0BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SampleOrchextra/OrchextraSDK",
+				);
+				INFOPLIST_FILE = SampleOrchextra/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigigo.SampleOrchextra;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A92AD9D71BEB9ED7000B0BFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SampleOrchextraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigigo.SampleOrchextraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleOrchextra.app/SampleOrchextra";
+			};
+			name = Debug;
+		};
+		A92AD9D81BEB9ED7000B0BFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SampleOrchextraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gigigo.SampleOrchextraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SampleOrchextra.app/SampleOrchextra";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A92AD9AC1BEB9ED7000B0BFD /* Build configuration list for PBXProject "SampleOrchextra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92AD9D11BEB9ED7000B0BFD /* Debug */,
+				A92AD9D21BEB9ED7000B0BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A92AD9D31BEB9ED7000B0BFD /* Build configuration list for PBXNativeTarget "SampleOrchextra" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92AD9D41BEB9ED7000B0BFD /* Debug */,
+				A92AD9D51BEB9ED7000B0BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A92AD9D61BEB9ED7000B0BFD /* Build configuration list for PBXNativeTarget "SampleOrchextraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92AD9D71BEB9ED7000B0BFD /* Debug */,
+				A92AD9D81BEB9ED7000B0BFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A92AD9A91BEB9ED7000B0BFD /* Project object */;
+}
