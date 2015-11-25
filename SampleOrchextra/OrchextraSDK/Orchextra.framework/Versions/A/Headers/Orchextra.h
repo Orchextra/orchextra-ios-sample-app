@@ -8,13 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ORCAction.h"
 #import "ORCUser.h"
 #import "ORCData.h"
 #import "ORCPushManager.h"
+#import "ORCActionManager.h"
+
+#import "ORCVuforiaConfig.h"
 #import "ORCConstants.h"
+
+#import "ORCActionInterface.h"
+#import "OrchextraOutputInterface.h"
+
+#import "ORCValidatorActionInterator.h"
 
 @class ORCActionManager;
 @class ORCConfigurationInteractor;
+
 
 @protocol OrchextraCustomActionDelegate <NSObject>
 
@@ -35,11 +45,9 @@
        completion:(void(^)(BOOL success, NSError *error))completion;
 
 - (void)startScanner;
-- (void)startImageRecognition;
 
 // CONFIGURATION
 - (void)debug:(BOOL)debug;
-- (BOOL)isImageRecognitionAvailable;
 
 
 @end

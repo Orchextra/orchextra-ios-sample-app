@@ -18,8 +18,8 @@
 @implementation AppDelegate
 
 
-#define ORCHEXTRA_API_KEY @"YOUR_API_KEY"
-#define ORCHEXTRA_API_SECRET @"YOUR_API_SECRET"
+#define ORCHEXTRA_API_KEY @"key"
+#define ORCHEXTRA_API_SECRET @"secret"
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -62,6 +62,24 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
 }
+
+#pragma mark - NOTIFICATION DELEGATION
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    [ORCPushManager handlePush:notification];
+}
+
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)devToken
+{
+    [ORCPushManager storeDeviceToken:devToken];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    [ORCPushManager handlePush:userInfo];
+}
+
 
 #pragma mark - OrchextraCustomActionDelegate
 

@@ -8,6 +8,7 @@
 
 #import "ScannerViewController.h"
 #import <Orchextra/Orchextra.h>
+#import <VuforiaOrchextra/VuforiaOrchextra.h>
 
 @interface ScannerViewController ()
 
@@ -22,7 +23,7 @@
     
     self.title = @"Scanner";
     self.openScanButton.layer.cornerRadius = 2.0;
-    self.vuforiaButton.hidden = ![[Orchextra sharedInstance] isImageRecognitionAvailable];
+    self.vuforiaButton.hidden = ![[VuforiaOrchextra sharedInstance] isVuforiaEnable];
 }
 
 - (IBAction)openScannerTapped:(id)sender
@@ -32,7 +33,7 @@
 
 - (IBAction)openVuforiaTapped:(id)sender
 {
-    [[Orchextra sharedInstance] startImageRecognition];
+    [[VuforiaOrchextra sharedInstance] startImageRecognition];
 }
 
 @end

@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OrchextraOutputInterface.h"
 
 @interface ORCData : NSObject
-
-- (NSArray *)loadGeofencesRegistered;
-- (NSArray *)loadBeaconsRegistered;
+<OrchextraOutputInterface>
 
 - (void)setEnvironment:(NSString *)environment;
-
 
 @end

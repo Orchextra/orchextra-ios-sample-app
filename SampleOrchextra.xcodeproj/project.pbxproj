@@ -32,6 +32,7 @@
 		A939108D1BEBA81D0096A693 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A939108C1BEBA81D0096A693 /* AVFoundation.framework */; };
 		A939108F1BEBA8230096A693 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A939108E1BEBA8230096A693 /* CoreLocation.framework */; };
 		A93910911BEBA8290096A693 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93910901BEBA8290096A693 /* CoreMotion.framework */; };
+		A9F16F271C059E7F00CC6693 /* VuforiaOrchextra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F16F261C059E7F00CC6693 /* VuforiaOrchextra.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		A939108C1BEBA81D0096A693 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A939108E1BEBA8230096A693 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A93910901BEBA8290096A693 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A9F16F261C059E7F00CC6693 /* VuforiaOrchextra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VuforiaOrchextra.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				A939108D1BEBA81D0096A693 /* AVFoundation.framework in Frameworks */,
 				A939108B1BEBA8150096A693 /* SystemConfiguration.framework in Frameworks */,
 				A93910881BEBA7FA0096A693 /* AdSupport.framework in Frameworks */,
+				A9F16F271C059E7F00CC6693 /* VuforiaOrchextra.framework in Frameworks */,
 				A92AD9DE1BEB9F3A000B0BFD /* Orchextra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +171,7 @@
 		A92AD9DA1BEB9F3A000B0BFD /* OrchextraSDK */ = {
 			isa = PBXGroup;
 			children = (
+				A9F16F261C059E7F00CC6693 /* VuforiaOrchextra.framework */,
 				A92AD9DB1BEB9F3A000B0BFD /* Orchextra.bundle */,
 				A92AD9DC1BEB9F3A000B0BFD /* Orchextra.framework */,
 			);

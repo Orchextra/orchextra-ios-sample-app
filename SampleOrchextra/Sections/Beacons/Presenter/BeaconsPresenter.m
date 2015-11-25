@@ -42,7 +42,7 @@
 
 - (void)viewIsReady
 {
-    self.beacons = [self.datasource loadBeaconsRegistered];
+    self.beacons = [self.datasource fetchBeaconsRegistered];
     [self.viewController showBeacons:self.beacons];
 }
 

@@ -45,7 +45,7 @@
 
 - (void)viewIsReady
 {
-    self.geofences = [self.datasource loadGeofencesRegistered];
+    self.geofences = [self.datasource fetchGeofencesRegistered];
     [self.viewController showGeofencesOnMap:self.geofences];
 }
 
