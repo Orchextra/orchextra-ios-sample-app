@@ -23,7 +23,13 @@
     
     self.title = @"Scanner";
     self.openScanButton.layer.cornerRadius = 2.0;
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
     self.vuforiaButton.hidden = ![[VuforiaOrchextra sharedInstance] isVuforiaEnable];
+    
 }
 
 - (IBAction)openScannerTapped:(id)sender

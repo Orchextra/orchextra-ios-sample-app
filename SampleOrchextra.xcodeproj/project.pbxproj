@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A901867D1C05E3950025D5A7 /* Orchextra.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A901867A1C05E3950025D5A7 /* Orchextra.bundle */; };
+		A90186801C05E3D80025D5A7 /* Orchextra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A901867B1C05E3950025D5A7 /* Orchextra.framework */; };
+		A90186811C05E3D80025D5A7 /* VuforiaOrchextra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A901867C1C05E3950025D5A7 /* VuforiaOrchextra.framework */; };
 		A92AD9B61BEB9ED7000B0BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9B51BEB9ED7000B0BFD /* main.m */; };
 		A92AD9B91BEB9ED7000B0BFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9B81BEB9ED7000B0BFD /* AppDelegate.m */; };
 		A92AD9BF1BEB9ED7000B0BFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92AD9BD1BEB9ED7000B0BFD /* Main.storyboard */; };
 		A92AD9C11BEB9ED7000B0BFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A92AD9C01BEB9ED7000B0BFD /* Assets.xcassets */; };
 		A92AD9C41BEB9ED7000B0BFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92AD9C21BEB9ED7000B0BFD /* LaunchScreen.storyboard */; };
 		A92AD9CF1BEB9ED7000B0BFD /* SampleOrchextraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9CE1BEB9ED7000B0BFD /* SampleOrchextraTests.m */; };
-		A92AD9DD1BEB9F3A000B0BFD /* Orchextra.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A92AD9DB1BEB9F3A000B0BFD /* Orchextra.bundle */; };
-		A92AD9DE1BEB9F3A000B0BFD /* Orchextra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92AD9DC1BEB9F3A000B0BFD /* Orchextra.framework */; };
 		A939107A1BEBA76E0096A693 /* BeaconsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A93910581BEBA76E0096A693 /* BeaconsPresenter.m */; };
 		A939107B1BEBA76E0096A693 /* BeaconsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A939105B1BEBA76E0096A693 /* BeaconsTableViewController.m */; };
 		A939107C1BEBA76E0096A693 /* DetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A939105F1BEBA76E0096A693 /* DetailModel.m */; };
@@ -32,7 +33,6 @@
 		A939108D1BEBA81D0096A693 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A939108C1BEBA81D0096A693 /* AVFoundation.framework */; };
 		A939108F1BEBA8230096A693 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A939108E1BEBA8230096A693 /* CoreLocation.framework */; };
 		A93910911BEBA8290096A693 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93910901BEBA8290096A693 /* CoreMotion.framework */; };
-		A9F16F271C059E7F00CC6693 /* VuforiaOrchextra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F16F261C059E7F00CC6693 /* VuforiaOrchextra.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A901867A1C05E3950025D5A7 /* Orchextra.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Orchextra.bundle; sourceTree = "<group>"; };
+		A901867B1C05E3950025D5A7 /* Orchextra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Orchextra.framework; sourceTree = "<group>"; };
+		A901867C1C05E3950025D5A7 /* VuforiaOrchextra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VuforiaOrchextra.framework; sourceTree = "<group>"; };
 		A92AD9B11BEB9ED7000B0BFD /* SampleOrchextra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleOrchextra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92AD9B51BEB9ED7000B0BFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A92AD9B71BEB9ED7000B0BFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,8 +60,6 @@
 		A92AD9CA1BEB9ED7000B0BFD /* SampleOrchextraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleOrchextraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92AD9CE1BEB9ED7000B0BFD /* SampleOrchextraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleOrchextraTests.m; sourceTree = "<group>"; };
 		A92AD9D01BEB9ED7000B0BFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A92AD9DB1BEB9F3A000B0BFD /* Orchextra.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Orchextra.bundle; sourceTree = "<group>"; };
-		A92AD9DC1BEB9F3A000B0BFD /* Orchextra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Orchextra.framework; sourceTree = "<group>"; };
 		A93910571BEBA76E0096A693 /* BeaconsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconsPresenter.h; sourceTree = "<group>"; };
 		A93910581BEBA76E0096A693 /* BeaconsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconsPresenter.m; sourceTree = "<group>"; };
 		A939105A1BEBA76E0096A693 /* BeaconsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconsTableViewController.h; sourceTree = "<group>"; };
@@ -88,7 +89,6 @@
 		A939108C1BEBA81D0096A693 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A939108E1BEBA8230096A693 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A93910901BEBA8290096A693 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		A9F16F261C059E7F00CC6693 /* VuforiaOrchextra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VuforiaOrchextra.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,13 +96,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A90186801C05E3D80025D5A7 /* Orchextra.framework in Frameworks */,
+				A90186811C05E3D80025D5A7 /* VuforiaOrchextra.framework in Frameworks */,
 				A93910911BEBA8290096A693 /* CoreMotion.framework in Frameworks */,
 				A939108F1BEBA8230096A693 /* CoreLocation.framework in Frameworks */,
 				A939108D1BEBA81D0096A693 /* AVFoundation.framework in Frameworks */,
 				A939108B1BEBA8150096A693 /* SystemConfiguration.framework in Frameworks */,
 				A93910881BEBA7FA0096A693 /* AdSupport.framework in Frameworks */,
-				A9F16F271C059E7F00CC6693 /* VuforiaOrchextra.framework in Frameworks */,
-				A92AD9DE1BEB9F3A000B0BFD /* Orchextra.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +116,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A90186791C05E3950025D5A7 /* OrchextraSDK_v1.1 */ = {
+			isa = PBXGroup;
+			children = (
+				A901867A1C05E3950025D5A7 /* Orchextra.bundle */,
+				A901867B1C05E3950025D5A7 /* Orchextra.framework */,
+				A901867C1C05E3950025D5A7 /* VuforiaOrchextra.framework */,
+			);
+			path = OrchextraSDK_v1.1;
+			sourceTree = "<group>";
+		};
 		A92AD9A81BEB9ED7000B0BFD = {
 			isa = PBXGroup;
 			children = (
@@ -138,9 +148,9 @@
 		A92AD9B31BEB9ED7000B0BFD /* SampleOrchextra */ = {
 			isa = PBXGroup;
 			children = (
+				A90186791C05E3950025D5A7 /* OrchextraSDK_v1.1 */,
 				A92AD9B71BEB9ED7000B0BFD /* AppDelegate.h */,
 				A92AD9B81BEB9ED7000B0BFD /* AppDelegate.m */,
-				A92AD9DA1BEB9F3A000B0BFD /* OrchextraSDK */,
 				A93910541BEBA76E0096A693 /* Sections */,
 				A92AD9BD1BEB9ED7000B0BFD /* Main.storyboard */,
 				A92AD9C01BEB9ED7000B0BFD /* Assets.xcassets */,
@@ -166,16 +176,6 @@
 				A92AD9D01BEB9ED7000B0BFD /* Info.plist */,
 			);
 			path = SampleOrchextraTests;
-			sourceTree = "<group>";
-		};
-		A92AD9DA1BEB9F3A000B0BFD /* OrchextraSDK */ = {
-			isa = PBXGroup;
-			children = (
-				A9F16F261C059E7F00CC6693 /* VuforiaOrchextra.framework */,
-				A92AD9DB1BEB9F3A000B0BFD /* Orchextra.bundle */,
-				A92AD9DC1BEB9F3A000B0BFD /* Orchextra.framework */,
-			);
-			path = OrchextraSDK;
 			sourceTree = "<group>";
 		};
 		A93910541BEBA76E0096A693 /* Sections */ = {
@@ -405,7 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A92AD9DD1BEB9F3A000B0BFD /* Orchextra.bundle in Resources */,
+				A901867D1C05E3950025D5A7 /* Orchextra.bundle in Resources */,
 				A92AD9C41BEB9ED7000B0BFD /* LaunchScreen.storyboard in Resources */,
 				A92AD9C11BEB9ED7000B0BFD /* Assets.xcassets in Resources */,
 				A92AD9BF1BEB9ED7000B0BFD /* Main.storyboard in Resources */,
@@ -566,10 +566,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SampleOrchextra/OrchextraSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/SampleOrchextra/OrchextraSDK_v1.1";
 				INFOPLIST_FILE = SampleOrchextra/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -587,10 +584,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/SampleOrchextra/OrchextraSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/SampleOrchextra/OrchextraSDK_v1.1";
 				INFOPLIST_FILE = SampleOrchextra/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
