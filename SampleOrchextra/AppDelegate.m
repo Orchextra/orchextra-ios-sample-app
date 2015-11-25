@@ -18,8 +18,8 @@
 @implementation AppDelegate
 
 
-#define ORCHEXTRA_API_KEY @"key"
-#define ORCHEXTRA_API_SECRET @"secret"
+#define ORCHEXTRA_API_KEY @"YOUR_API_KEY"
+#define ORCHEXTRA_API_SECRET @"YOUR_API_SECRET"
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
