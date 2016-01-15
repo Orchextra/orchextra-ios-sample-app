@@ -1,4 +1,4 @@
-# Orchextra iOS-Demo-App
+# Orchextra iOS-sample-App
 
 The aim of this project is to help you with your first integration of Orchextra SDK and also to show you the capabilities of the SDK with a sample project. 
 
