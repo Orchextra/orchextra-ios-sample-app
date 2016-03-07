@@ -18,8 +18,8 @@
 @implementation AppDelegate
 
 
-#define ORCHEXTRA_API_KEY @"YOUR_API_KEY"
-#define ORCHEXTRA_API_SECRET @"YOUR_API_SECRET"
+#define ORCHEXTRA_API_KEY @"cf35964911b0dbc36990edc57250f5e6d9aed826"
+#define ORCHEXTRA_API_SECRET @"a77a2214c54cbbabcb351dc44f3ee0b24efd198f"
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -32,12 +32,13 @@
                                        NSLog(@"ORCHEXTRA has loaded successfully");
                                    }
                                    else {
-                                       NSLog(@"ORCHEXTRA ERROR: %@", error.localizedDescription);
+                                       NSLog(@"ORCHEXTRA Error: %@", error.localizedDescription);
                                    }
                                    
                                }];
     
-    [[Orchextra sharedInstance] debug:true];
+    [Orchextra logLevel:ORCLogLevelAll];
+    [Orchextra saveLogsToAFile];
     
     return YES;
     

@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A901867D1C05E3950025D5A7 /* Orchextra.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A901867A1C05E3950025D5A7 /* Orchextra.bundle */; };
-		A90186801C05E3D80025D5A7 /* Orchextra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A901867B1C05E3950025D5A7 /* Orchextra.framework */; };
-		A90186811C05E3D80025D5A7 /* VuforiaOrchextra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A901867C1C05E3950025D5A7 /* VuforiaOrchextra.framework */; };
+		A90ABDA21C77224F003DC902 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90ABDA11C77224F003DC902 /* CoreMedia.framework */; };
 		A92AD9B61BEB9ED7000B0BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9B51BEB9ED7000B0BFD /* main.m */; };
 		A92AD9B91BEB9ED7000B0BFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9B81BEB9ED7000B0BFD /* AppDelegate.m */; };
 		A92AD9BF1BEB9ED7000B0BFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A92AD9BD1BEB9ED7000B0BFD /* Main.storyboard */; };
@@ -18,8 +16,6 @@
 		A92AD9CF1BEB9ED7000B0BFD /* SampleOrchextraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9CE1BEB9ED7000B0BFD /* SampleOrchextraTests.m */; };
 		A939107A1BEBA76E0096A693 /* BeaconsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A93910581BEBA76E0096A693 /* BeaconsPresenter.m */; };
 		A939107B1BEBA76E0096A693 /* BeaconsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A939105B1BEBA76E0096A693 /* BeaconsTableViewController.m */; };
-		A939107C1BEBA76E0096A693 /* DetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A939105F1BEBA76E0096A693 /* DetailModel.m */; };
-		A939107D1BEBA76E0096A693 /* MainWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = A93910621BEBA76E0096A693 /* MainWireframe.m */; };
 		A939107E1BEBA76E0096A693 /* GeofencesPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A93910661BEBA76E0096A693 /* GeofencesPresenter.m */; };
 		A939107F1BEBA76E0096A693 /* GeofencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93910691BEBA76E0096A693 /* GeofencesViewController.m */; };
 		A93910801BEBA76E0096A693 /* RegionAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A939106B1BEBA76E0096A693 /* RegionAnnotation.m */; };
@@ -33,6 +29,18 @@
 		A939108D1BEBA81D0096A693 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A939108C1BEBA81D0096A693 /* AVFoundation.framework */; };
 		A939108F1BEBA8230096A693 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A939108E1BEBA8230096A693 /* CoreLocation.framework */; };
 		A93910911BEBA8290096A693 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93910901BEBA8290096A693 /* CoreMotion.framework */; };
+		A97D5DD21C0D83930086C867 /* Orchextra.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A97D5DCF1C0D83930086C867 /* Orchextra.bundle */; };
+		A97D5DD51C0D83C70086C867 /* Orchextra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97D5DD01C0D83930086C867 /* Orchextra.framework */; };
+		A97D5DD61C0D83CD0086C867 /* VuforiaOrchextra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A97D5DD11C0D83930086C867 /* VuforiaOrchextra.framework */; };
+		A9FF9B821C8AED7400A4C388 /* DetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FF9B7E1C8AED7400A4C388 /* DetailModel.m */; };
+		A9FF9B831C8AED7400A4C388 /* MainWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FF9B811C8AED7400A4C388 /* MainWireframe.m */; };
+		A9FF9B8A1C8AEDC800A4C388 /* UserDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FF9B891C8AEDC800A4C388 /* UserDetailsViewController.m */; };
+		A9FF9B8D1C8AEDDB00A4C388 /* UserDetailsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FF9B8C1C8AEDDB00A4C388 /* UserDetailsPresenter.m */; };
+		A9FF9B911C8AEE0500A4C388 /* UserDetailsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FF9B901C8AEE0500A4C388 /* UserDetailsInteractor.m */; };
+		A9FF9B941C8AEE1700A4C388 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FF9B931C8AEE1700A4C388 /* User.m */; };
+		A9FF9B981C8AEE4200A4C388 /* SessionPersister.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FF9B971C8AEE4200A4C388 /* SessionPersister.m */; };
+		A9FF9B9B1C8CA16F00A4C388 /* ScannerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FF9B9A1C8CA16F00A4C388 /* ScannerPresenter.m */; };
+		A9FF9B9F1C8CA7DC00A4C388 /* NSUserDefaults+ORCGIGArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FF9B9E1C8CA7DC00A4C388 /* NSUserDefaults+ORCGIGArchive.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A901867A1C05E3950025D5A7 /* Orchextra.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Orchextra.bundle; sourceTree = "<group>"; };
-		A901867B1C05E3950025D5A7 /* Orchextra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Orchextra.framework; sourceTree = "<group>"; };
-		A901867C1C05E3950025D5A7 /* VuforiaOrchextra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VuforiaOrchextra.framework; sourceTree = "<group>"; };
+		A90ABDA11C77224F003DC902 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		A92AD9B11BEB9ED7000B0BFD /* SampleOrchextra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleOrchextra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92AD9B51BEB9ED7000B0BFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A92AD9B71BEB9ED7000B0BFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,10 +70,6 @@
 		A93910581BEBA76E0096A693 /* BeaconsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconsPresenter.m; sourceTree = "<group>"; };
 		A939105A1BEBA76E0096A693 /* BeaconsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconsTableViewController.h; sourceTree = "<group>"; };
 		A939105B1BEBA76E0096A693 /* BeaconsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconsTableViewController.m; sourceTree = "<group>"; };
-		A939105E1BEBA76E0096A693 /* DetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailModel.h; sourceTree = "<group>"; };
-		A939105F1BEBA76E0096A693 /* DetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailModel.m; sourceTree = "<group>"; };
-		A93910611BEBA76E0096A693 /* MainWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWireframe.h; sourceTree = "<group>"; };
-		A93910621BEBA76E0096A693 /* MainWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWireframe.m; sourceTree = "<group>"; };
 		A93910651BEBA76E0096A693 /* GeofencesPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeofencesPresenter.h; sourceTree = "<group>"; };
 		A93910661BEBA76E0096A693 /* GeofencesPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeofencesPresenter.m; sourceTree = "<group>"; };
 		A93910681BEBA76E0096A693 /* GeofencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeofencesViewController.h; sourceTree = "<group>"; };
@@ -89,6 +91,27 @@
 		A939108C1BEBA81D0096A693 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A939108E1BEBA8230096A693 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A93910901BEBA8290096A693 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		A97D5DCF1C0D83930086C867 /* Orchextra.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Orchextra.bundle; sourceTree = "<group>"; };
+		A97D5DD01C0D83930086C867 /* Orchextra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Orchextra.framework; sourceTree = "<group>"; };
+		A97D5DD11C0D83930086C867 /* VuforiaOrchextra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VuforiaOrchextra.framework; sourceTree = "<group>"; };
+		A9FF9B7D1C8AED7400A4C388 /* DetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailModel.h; sourceTree = "<group>"; };
+		A9FF9B7E1C8AED7400A4C388 /* DetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailModel.m; sourceTree = "<group>"; };
+		A9FF9B801C8AED7400A4C388 /* MainWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWireframe.h; sourceTree = "<group>"; };
+		A9FF9B811C8AED7400A4C388 /* MainWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWireframe.m; sourceTree = "<group>"; };
+		A9FF9B881C8AEDC800A4C388 /* UserDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailsViewController.h; sourceTree = "<group>"; };
+		A9FF9B891C8AEDC800A4C388 /* UserDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailsViewController.m; sourceTree = "<group>"; };
+		A9FF9B8B1C8AEDDB00A4C388 /* UserDetailsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailsPresenter.h; sourceTree = "<group>"; };
+		A9FF9B8C1C8AEDDB00A4C388 /* UserDetailsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailsPresenter.m; sourceTree = "<group>"; };
+		A9FF9B8F1C8AEE0500A4C388 /* UserDetailsInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDetailsInteractor.h; path = Interactor/UserDetailsInteractor.h; sourceTree = "<group>"; };
+		A9FF9B901C8AEE0500A4C388 /* UserDetailsInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDetailsInteractor.m; path = Interactor/UserDetailsInteractor.m; sourceTree = "<group>"; };
+		A9FF9B921C8AEE1700A4C388 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		A9FF9B931C8AEE1700A4C388 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		A9FF9B961C8AEE4200A4C388 /* SessionPersister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SessionPersister.h; path = Persister/SessionPersister.h; sourceTree = "<group>"; };
+		A9FF9B971C8AEE4200A4C388 /* SessionPersister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SessionPersister.m; path = Persister/SessionPersister.m; sourceTree = "<group>"; };
+		A9FF9B991C8CA16F00A4C388 /* ScannerPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScannerPresenter.h; sourceTree = "<group>"; };
+		A9FF9B9A1C8CA16F00A4C388 /* ScannerPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScannerPresenter.m; sourceTree = "<group>"; };
+		A9FF9B9D1C8CA7DC00A4C388 /* NSUserDefaults+ORCGIGArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+ORCGIGArchive.h"; sourceTree = "<group>"; };
+		A9FF9B9E1C8CA7DC00A4C388 /* NSUserDefaults+ORCGIGArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ORCGIGArchive.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +119,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A90186801C05E3D80025D5A7 /* Orchextra.framework in Frameworks */,
-				A90186811C05E3D80025D5A7 /* VuforiaOrchextra.framework in Frameworks */,
+				A90ABDA21C77224F003DC902 /* CoreMedia.framework in Frameworks */,
 				A93910911BEBA8290096A693 /* CoreMotion.framework in Frameworks */,
 				A939108F1BEBA8230096A693 /* CoreLocation.framework in Frameworks */,
+				A97D5DD51C0D83C70086C867 /* Orchextra.framework in Frameworks */,
+				A97D5DD61C0D83CD0086C867 /* VuforiaOrchextra.framework in Frameworks */,
 				A939108D1BEBA81D0096A693 /* AVFoundation.framework in Frameworks */,
 				A939108B1BEBA8150096A693 /* SystemConfiguration.framework in Frameworks */,
 				A93910881BEBA7FA0096A693 /* AdSupport.framework in Frameworks */,
@@ -116,16 +140,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A90186791C05E3950025D5A7 /* OrchextraSDK_v1.1 */ = {
-			isa = PBXGroup;
-			children = (
-				A901867A1C05E3950025D5A7 /* Orchextra.bundle */,
-				A901867B1C05E3950025D5A7 /* Orchextra.framework */,
-				A901867C1C05E3950025D5A7 /* VuforiaOrchextra.framework */,
-			);
-			path = OrchextraSDK_v1.1;
-			sourceTree = "<group>";
-		};
 		A92AD9A81BEB9ED7000B0BFD = {
 			isa = PBXGroup;
 			children = (
@@ -148,10 +162,12 @@
 		A92AD9B31BEB9ED7000B0BFD /* SampleOrchextra */ = {
 			isa = PBXGroup;
 			children = (
-				A90186791C05E3950025D5A7 /* OrchextraSDK_v1.1 */,
+				A9FF9B9C1C8CA7DC00A4C388 /* Libs */,
+				A97D5DCE1C0D83930086C867 /* OrchextraSDK */,
 				A92AD9B71BEB9ED7000B0BFD /* AppDelegate.h */,
 				A92AD9B81BEB9ED7000B0BFD /* AppDelegate.m */,
 				A93910541BEBA76E0096A693 /* Sections */,
+				A9FF9B7B1C8AED7400A4C388 /* Common */,
 				A92AD9BD1BEB9ED7000B0BFD /* Main.storyboard */,
 				A92AD9C01BEB9ED7000B0BFD /* Assets.xcassets */,
 				A92AD9C21BEB9ED7000B0BFD /* LaunchScreen.storyboard */,
@@ -181,8 +197,8 @@
 		A93910541BEBA76E0096A693 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				A9FF9B841C8AED7C00A4C388 /* UserDetails */,
 				A93910551BEBA76E0096A693 /* Beacons */,
-				A939105C1BEBA76E0096A693 /* Common */,
 				A93910631BEBA76E0096A693 /* Geofences */,
 				A939106C1BEBA76E0096A693 /* RegionDetail */,
 				A93910771BEBA76E0096A693 /* Scanner */,
@@ -215,33 +231,6 @@
 				A939105B1BEBA76E0096A693 /* BeaconsTableViewController.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A939105C1BEBA76E0096A693 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				A939105D1BEBA76E0096A693 /* Models */,
-				A93910601BEBA76E0096A693 /* Wireframe */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		A939105D1BEBA76E0096A693 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				A939105E1BEBA76E0096A693 /* DetailModel.h */,
-				A939105F1BEBA76E0096A693 /* DetailModel.m */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		A93910601BEBA76E0096A693 /* Wireframe */ = {
-			isa = PBXGroup;
-			children = (
-				A93910611BEBA76E0096A693 /* MainWireframe.h */,
-				A93910621BEBA76E0096A693 /* MainWireframe.m */,
-			);
-			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		A93910631BEBA76E0096A693 /* Geofences */ = {
@@ -309,6 +298,8 @@
 			children = (
 				A93910781BEBA76E0096A693 /* ScannerViewController.h */,
 				A93910791BEBA76E0096A693 /* ScannerViewController.m */,
+				A9FF9B991C8CA16F00A4C388 /* ScannerPresenter.h */,
+				A9FF9B9A1C8CA16F00A4C388 /* ScannerPresenter.m */,
 			);
 			path = Scanner;
 			sourceTree = "<group>";
@@ -316,6 +307,7 @@
 		A93910891BEBA8020096A693 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A90ABDA11C77224F003DC902 /* CoreMedia.framework */,
 				A93910901BEBA8290096A693 /* CoreMotion.framework */,
 				A939108E1BEBA8230096A693 /* CoreLocation.framework */,
 				A939108C1BEBA81D0096A693 /* AVFoundation.framework */,
@@ -323,6 +315,85 @@
 				A93910871BEBA7FA0096A693 /* AdSupport.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A97D5DCE1C0D83930086C867 /* OrchextraSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A97D5DCF1C0D83930086C867 /* Orchextra.bundle */,
+				A97D5DD01C0D83930086C867 /* Orchextra.framework */,
+				A97D5DD11C0D83930086C867 /* VuforiaOrchextra.framework */,
+			);
+			path = OrchextraSDK;
+			sourceTree = "<group>";
+		};
+		A9FF9B7B1C8AED7400A4C388 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A9FF9B951C8AEE1D00A4C388 /* Persister */,
+				A9FF9B8E1C8AEDEA00A4C388 /* Interactor */,
+				A9FF9B7C1C8AED7400A4C388 /* Models */,
+				A9FF9B7F1C8AED7400A4C388 /* Wireframe */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A9FF9B7C1C8AED7400A4C388 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9FF9B7D1C8AED7400A4C388 /* DetailModel.h */,
+				A9FF9B7E1C8AED7400A4C388 /* DetailModel.m */,
+				A9FF9B921C8AEE1700A4C388 /* User.h */,
+				A9FF9B931C8AEE1700A4C388 /* User.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A9FF9B7F1C8AED7400A4C388 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				A9FF9B801C8AED7400A4C388 /* MainWireframe.h */,
+				A9FF9B811C8AED7400A4C388 /* MainWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		A9FF9B841C8AED7C00A4C388 /* UserDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A9FF9B881C8AEDC800A4C388 /* UserDetailsViewController.h */,
+				A9FF9B891C8AEDC800A4C388 /* UserDetailsViewController.m */,
+				A9FF9B8B1C8AEDDB00A4C388 /* UserDetailsPresenter.h */,
+				A9FF9B8C1C8AEDDB00A4C388 /* UserDetailsPresenter.m */,
+			);
+			path = UserDetails;
+			sourceTree = "<group>";
+		};
+		A9FF9B8E1C8AEDEA00A4C388 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A9FF9B8F1C8AEE0500A4C388 /* UserDetailsInteractor.h */,
+				A9FF9B901C8AEE0500A4C388 /* UserDetailsInteractor.m */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		A9FF9B951C8AEE1D00A4C388 /* Persister */ = {
+			isa = PBXGroup;
+			children = (
+				A9FF9B961C8AEE4200A4C388 /* SessionPersister.h */,
+				A9FF9B971C8AEE4200A4C388 /* SessionPersister.m */,
+			);
+			name = Persister;
+			sourceTree = "<group>";
+		};
+		A9FF9B9C1C8CA7DC00A4C388 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				A9FF9B9D1C8CA7DC00A4C388 /* NSUserDefaults+ORCGIGArchive.h */,
+				A9FF9B9E1C8CA7DC00A4C388 /* NSUserDefaults+ORCGIGArchive.m */,
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,7 +441,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = "Judith Medina";
+				ORGANIZATIONNAME = "Gigigo Mobile Group S.L";
 				TargetAttributes = {
 					A92AD9B01BEB9ED7000B0BFD = {
 						CreatedOnToolsVersion = 7.1;
@@ -405,7 +476,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A901867D1C05E3950025D5A7 /* Orchextra.bundle in Resources */,
+				A97D5DD21C0D83930086C867 /* Orchextra.bundle in Resources */,
 				A92AD9C41BEB9ED7000B0BFD /* LaunchScreen.storyboard in Resources */,
 				A92AD9C11BEB9ED7000B0BFD /* Assets.xcassets in Resources */,
 				A92AD9BF1BEB9ED7000B0BFD /* Main.storyboard in Resources */,
@@ -427,18 +498,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A939107A1BEBA76E0096A693 /* BeaconsPresenter.m in Sources */,
+				A9FF9B9F1C8CA7DC00A4C388 /* NSUserDefaults+ORCGIGArchive.m in Sources */,
 				A93910821BEBA76E0096A693 /* DetailCell.m in Sources */,
+				A9FF9B941C8AEE1700A4C388 /* User.m in Sources */,
 				A93910831BEBA76E0096A693 /* NotifyCell.m in Sources */,
 				A93910851BEBA76E0096A693 /* ScannerViewController.m in Sources */,
+				A9FF9B821C8AED7400A4C388 /* DetailModel.m in Sources */,
 				A93910801BEBA76E0096A693 /* RegionAnnotation.m in Sources */,
 				A93910841BEBA76E0096A693 /* RegionDetailTableController.m in Sources */,
-				A939107C1BEBA76E0096A693 /* DetailModel.m in Sources */,
 				A93910811BEBA76E0096A693 /* RegionDetailPresenter.m in Sources */,
 				A92AD9B91BEB9ED7000B0BFD /* AppDelegate.m in Sources */,
-				A939107D1BEBA76E0096A693 /* MainWireframe.m in Sources */,
+				A9FF9B911C8AEE0500A4C388 /* UserDetailsInteractor.m in Sources */,
+				A9FF9B981C8AEE4200A4C388 /* SessionPersister.m in Sources */,
 				A939107B1BEBA76E0096A693 /* BeaconsTableViewController.m in Sources */,
 				A939107F1BEBA76E0096A693 /* GeofencesViewController.m in Sources */,
+				A9FF9B831C8AED7400A4C388 /* MainWireframe.m in Sources */,
+				A9FF9B9B1C8CA16F00A4C388 /* ScannerPresenter.m in Sources */,
 				A939107E1BEBA76E0096A693 /* GeofencesPresenter.m in Sources */,
+				A9FF9B8A1C8AEDC800A4C388 /* UserDetailsViewController.m in Sources */,
+				A9FF9B8D1C8AEDDB00A4C388 /* UserDetailsPresenter.m in Sources */,
 				A92AD9B61BEB9ED7000B0BFD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,7 +644,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/SampleOrchextra/OrchextraSDK_v1.1";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/SampleOrchextra/OrchextraSDK";
 				INFOPLIST_FILE = SampleOrchextra/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -584,7 +662,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/SampleOrchextra/OrchextraSDK_v1.1";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/SampleOrchextra/OrchextraSDK";
 				INFOPLIST_FILE = SampleOrchextra/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -13,4 +13,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *openScanButton;
 @property (weak, nonatomic) IBOutlet UIButton *vuforiaButton;
 
+@property (weak, nonatomic) IBOutlet UILabel *userIdentifierLabel;
+@property (weak, nonatomic) IBOutlet UILabel *genderLabel;
+@property (weak, nonatomic) IBOutlet UILabel *birthdayLabel;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+
 @end

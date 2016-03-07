@@ -16,7 +16,7 @@
 
 @property (strong, nonatomic) UIViewController<BeaconViewInterface> *viewController;
 @property (strong, nonatomic) MainWireframe *wireframe;
-@property (strong, nonatomic) ORCData *datasource;
+@property (strong, nonatomic) ORCSettingsDataManager *datasource;
 @property (strong, nonatomic) NSArray *beacons;
 
 @end
@@ -31,7 +31,7 @@
     if (self)
     {
         _wireframe = [[MainWireframe alloc] init];
-        _datasource = [[ORCData alloc] init];
+        _datasource = [[ORCSettingsDataManager alloc] init];
         _viewController = viewController;
     }
     
@@ -42,6 +42,7 @@
 
 - (void)viewIsReady
 {
+
     self.beacons = [self.datasource fetchBeaconsRegistered];
     [self.viewController showBeacons:self.beacons];
 }
