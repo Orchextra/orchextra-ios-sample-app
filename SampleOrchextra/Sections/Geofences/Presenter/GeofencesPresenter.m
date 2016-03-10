@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Gigigo. All rights reserved.
 //
 
-#import <Orchextra/ORCData.h>
+#import <Orchextra/Orchextra.h>
 #import <CoreLocation/CoreLocation.h>
 #import "MainWireframe.h"
 #import "GeofencesPresenter.h"
@@ -17,7 +17,7 @@
 
 @property (weak, nonatomic) UIViewController<GeofenceViewInterface> *viewController;
 @property (strong, nonatomic) MainWireframe *wireframe;
-@property (strong, nonatomic) ORCData *datasource;
+@property (strong, nonatomic) ORCSettingsDataManager *datasource;
 @property (strong, nonatomic) NSArray *geofences;
 @property (strong, nonatomic) NSString *identifierSelected;
 
@@ -34,7 +34,7 @@
     if (self)
     {
         _wireframe = [[MainWireframe alloc] init];
-        _datasource = [[ORCData alloc] init];
+        _datasource = [[ORCSettingsDataManager alloc] init];
         _viewController = viewController;
     }
     
