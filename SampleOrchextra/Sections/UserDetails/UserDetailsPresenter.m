@@ -56,7 +56,6 @@
     {
         [self.viewController displayAnonymousUser];
     }
-    
 }
 
 - (void)userDidTapToLoginWithUser:(User *)user

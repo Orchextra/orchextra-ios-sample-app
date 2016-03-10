@@ -27,5 +27,6 @@ typedef void(^CompletionNotification)(void);
 - (void)sendLocalPushNotificationWithGeofence:(ORCGeofence *)geofence;
 
 - (void)showAlertViewWithTitle:(NSString *)title body:(NSString *)body
+                    cancelable:(BOOL)cancelable
                     completion:(CompletionNotification)completion;
 @end

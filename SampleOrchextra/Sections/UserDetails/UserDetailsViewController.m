@@ -73,11 +73,6 @@
     [self.addUserButton setTitle:@"Change User" forState:UIControlStateNormal];
 }
 
-- (void)displayBirthdayPickerWithDate:(NSDate *)date
-{
-    
-}
-
 #pragma mark - PUBLIC
 
 - (IBAction)addUserButtonTapped:(id)sender
@@ -143,8 +138,12 @@
 {
     [self.emailTextField resignFirstResponder];
 
-    self.bottomConstraint.constant = 44;
+    self.bottomConstraint.constant = 64;
     [self.pickerView setHidden:NO];
+    
+    if (self.userDisplayed.birthday) {
+        self.datePicker.date = self.userDisplayed.birthday;
+    }
 
     [UIView animateWithDuration:1.0 delay:0.0
          usingSpringWithDamping:0.7

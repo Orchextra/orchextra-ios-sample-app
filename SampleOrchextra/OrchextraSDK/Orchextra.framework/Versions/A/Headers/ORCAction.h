@@ -23,6 +23,7 @@
 // Schedule
 @property (assign, nonatomic) NSInteger scheduleTime;
 @property (assign, nonatomic) BOOL cancelable;
+@property (assign, nonatomic) BOOL actionWithUserInteraction;
 
 - (instancetype)initWithJSON:(NSDictionary *)json;
 - (instancetype)initWithType:(NSString *)type;

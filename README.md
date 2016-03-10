@@ -4,16 +4,19 @@ The aim of this project is to help you with your first integration of Orchextra 
 
 ## Features
 
-1. Scanner a QR / Barcode 
+1. Scan a QR / Barcode
 2. Image Recognition - You need a [Vuforia][vuforia] Account.
 3. List all your geofences in a map
 ⋅⋅* Click on the geofence point to get more information
 4. List all your beacons 
 ⋅⋅* Click on the beacon to get more information
+5. Add CRM user to create the right segmentation.
+
 
 ## Getting started
 
 First of all, you need to create a project in [Orchextra dashboard][dashboard]. Go to "Setting" > "SDK Configuration" to get the **api key** and **api secret**, you need to replace these values into AppDelegate.m 
+
 ```objective-c
 #define ORCHEXTRA_API_KEY @"YOUR_API_KEY"
 #define ORCHEXTRA_API_SECRET @"YOUR_API_SECRET"

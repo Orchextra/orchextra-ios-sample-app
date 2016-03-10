@@ -14,7 +14,6 @@
 
 - (void)displayAnonymousUser;
 - (void)displayUserLogged:(User *)user;
-- (void)displayBirthdayPickerWithDate:(NSDate *)date;
 
 @end
 
