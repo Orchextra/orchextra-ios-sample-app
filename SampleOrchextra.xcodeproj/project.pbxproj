@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F3EEBFC1D2141AD00490A84 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3EEBFB1D2141AD00490A84 /* WebKit.framework */; };
 		8F3EEBFE1D2141B600490A84 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3EEBFD1D2141B600490A84 /* PassKit.framework */; };
+		8F447A491D34F01D00705861 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F447A481D34F01D00705861 /* SafariServices.framework */; };
 		A90ABDA21C77224F003DC902 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90ABDA11C77224F003DC902 /* CoreMedia.framework */; };
 		A92AD9B61BEB9ED7000B0BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9B51BEB9ED7000B0BFD /* main.m */; };
 		A92AD9B91BEB9ED7000B0BFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9B81BEB9ED7000B0BFD /* AppDelegate.m */; };
@@ -58,6 +59,7 @@
 /* Begin PBXFileReference section */
 		8F3EEBFB1D2141AD00490A84 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		8F3EEBFD1D2141B600490A84 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		8F447A481D34F01D00705861 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		A90ABDA11C77224F003DC902 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		A92AD9B11BEB9ED7000B0BFD /* SampleOrchextra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleOrchextra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92AD9B51BEB9ED7000B0BFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F447A491D34F01D00705861 /* SafariServices.framework in Frameworks */,
 				8F3EEBFE1D2141B600490A84 /* PassKit.framework in Frameworks */,
 				8F3EEBFC1D2141AD00490A84 /* WebKit.framework in Frameworks */,
 				A90ABDA21C77224F003DC902 /* CoreMedia.framework in Frameworks */,
@@ -313,6 +316,7 @@
 		A93910891BEBA8020096A693 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F447A481D34F01D00705861 /* SafariServices.framework */,
 				8F3EEBFD1D2141B600490A84 /* PassKit.framework */,
 				8F3EEBFB1D2141AD00490A84 /* WebKit.framework */,
 				A90ABDA11C77224F003DC902 /* CoreMedia.framework */,
