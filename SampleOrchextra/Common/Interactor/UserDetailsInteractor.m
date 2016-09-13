@@ -73,7 +73,7 @@
     }
     
     /* Save Orchextra user */
-    [orchextra setUser:userOrchextra];
+    [orchextra bindUser:userOrchextra];
 }
 
 @end
