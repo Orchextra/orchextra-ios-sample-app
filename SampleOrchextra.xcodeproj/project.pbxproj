@@ -12,8 +12,8 @@
 		8F3EEBFC1D2141AD00490A84 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3EEBFB1D2141AD00490A84 /* WebKit.framework */; };
 		8F3EEBFE1D2141B600490A84 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3EEBFD1D2141B600490A84 /* PassKit.framework */; };
 		8F447A491D34F01D00705861 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F447A481D34F01D00705861 /* SafariServices.framework */; };
-		8F7ABE2C1E3B70B10050446B /* Orchextra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7ABE2B1E3B70B10050446B /* Orchextra.framework */; };
-		8F7ABE2D1E3B70B10050446B /* Orchextra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F7ABE2B1E3B70B10050446B /* Orchextra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F62DDD51E4B5AC200FD1826 /* Orchextra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F62DDD31E4B5A9900FD1826 /* Orchextra.framework */; };
+		8F62DDD61E4B5AC200FD1826 /* Orchextra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F62DDD31E4B5A9900FD1826 /* Orchextra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A90ABDA21C77224F003DC902 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90ABDA11C77224F003DC902 /* CoreMedia.framework */; };
 		A92AD9B61BEB9ED7000B0BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9B51BEB9ED7000B0BFD /* main.m */; };
 		A92AD9B91BEB9ED7000B0BFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9B81BEB9ED7000B0BFD /* AppDelegate.m */; };
@@ -64,7 +64,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8F7ABE2D1E3B70B10050446B /* Orchextra.framework in Embed Frameworks */,
+				8F62DDD61E4B5AC200FD1826 /* Orchextra.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,7 +77,7 @@
 		8F3EEBFB1D2141AD00490A84 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		8F3EEBFD1D2141B600490A84 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		8F447A481D34F01D00705861 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		8F7ABE2B1E3B70B10050446B /* Orchextra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Orchextra.framework; path = ../../Carthage/Build/iOS/Orchextra.framework; sourceTree = "<group>"; };
+		8F62DDD31E4B5A9900FD1826 /* Orchextra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Orchextra.framework; sourceTree = "<group>"; };
 		A90ABDA11C77224F003DC902 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		A92AD9B11BEB9ED7000B0BFD /* SampleOrchextra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleOrchextra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92AD9B51BEB9ED7000B0BFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -140,13 +140,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F7ABE2C1E3B70B10050446B /* Orchextra.framework in Frameworks */,
 				8F447A491D34F01D00705861 /* SafariServices.framework in Frameworks */,
 				8F3EEBFE1D2141B600490A84 /* PassKit.framework in Frameworks */,
 				8F3EEBFC1D2141AD00490A84 /* WebKit.framework in Frameworks */,
 				8F0C706A1E3B65F200C27C9C /* VuforiaOrchextra.framework in Frameworks */,
 				A90ABDA21C77224F003DC902 /* CoreMedia.framework in Frameworks */,
 				A93910911BEBA8290096A693 /* CoreMotion.framework in Frameworks */,
+				8F62DDD51E4B5AC200FD1826 /* Orchextra.framework in Frameworks */,
 				A939108F1BEBA8230096A693 /* CoreLocation.framework in Frameworks */,
 				A939108D1BEBA81D0096A693 /* AVFoundation.framework in Frameworks */,
 				A939108B1BEBA8150096A693 /* SystemConfiguration.framework in Frameworks */,
@@ -348,7 +348,7 @@
 		A97D5DCE1C0D83930086C867 /* OrchextraSDK */ = {
 			isa = PBXGroup;
 			children = (
-				8F7ABE2B1E3B70B10050446B /* Orchextra.framework */,
+				8F62DDD31E4B5A9900FD1826 /* Orchextra.framework */,
 				8F0C70681E3B65F200C27C9C /* VuforiaOrchextra.framework */,
 			);
 			path = OrchextraSDK;
