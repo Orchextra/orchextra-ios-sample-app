@@ -1,6 +1,0 @@
-framework module Orchextra {
-  umbrella header "Orchextra.h"
-
-  export *
-  module * { export * }
-}
