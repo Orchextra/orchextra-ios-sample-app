@@ -4,3 +4,7 @@ framework module Orchextra {
   export *
   module * { export * }
 }
+
+module Orchextra.Swift {
+    header "Orchextra-Swift.h"
+}
