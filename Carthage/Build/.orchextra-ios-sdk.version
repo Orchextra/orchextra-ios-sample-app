@@ -1,18 +1,9 @@
 {
+  "commitish" : "749ed0277a0f1788ab80a11836737f40833d65f9",
   "iOS" : [
     {
-      "hash" : "245e19c28099e3aec26da31cacf701414b41d0ecb891af7f46e8f63814e9d148",
+      "hash" : "f2dbaa4e980b5599cdb9cdece1d37ad1595819f14af30fb72d7f1d4ac9930da4",
       "name" : "Orchextra"
     }
-  ],
-  "commitish" : "v2.1.5",
-  "watchOS" : [
-
-  ],
-  "tvOS" : [
-
-  ],
-  "Mac" : [
-
   ]
 }

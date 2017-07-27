@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import <Orchextra/Orchextra.h>
 
-
 @interface AppDelegate ()
 <OrchextraCustomActionDelegate>
 
@@ -17,9 +16,8 @@
 
 @implementation AppDelegate
 
-#define ORCHEXTRA_API_KEY @"YOUR_API_KEY"
-#define ORCHEXTRA_API_SECRET @"YOUR_API_SECRET"
-
+#define ORCHEXTRA_API_KEY @"eb58d2654fa8db064c777da03bfe34d0ade89582"
+#define ORCHEXTRA_API_SECRET @"63717acaa17a0ad3abeb0f581e2d9f198b6ec558"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
@@ -35,11 +33,10 @@
                                    }
                                }];
     
-    [Orchextra logLevel:ORCLogLevelDebug];
+    [Orchextra logLevel:ORCLogLevelAll];
     [Orchextra saveLogsToAFile];
     
     return YES;
-    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -50,16 +47,17 @@
 {
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-}
-
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
+}
+
+- (void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
+{
+    [[Orchextra sharedInstance] fetchNewDataWithCompletionHandler:completionHandler];
 }
 
 #pragma mark - NOTIFICATION DELEGATION
@@ -78,7 +76,6 @@
 {
     [ORCPushManager handlePush:userInfo];
 }
-
 
 #pragma mark - OrchextraCustomActionDelegate
 

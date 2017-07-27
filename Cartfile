@@ -1,1 +1,1 @@
-github "Orchextra/orchextra-ios-sdk" ~> 2.1
+github "Orchextra/orchextra-ios-sdk" "feature/core-bluetooth-eddystone"

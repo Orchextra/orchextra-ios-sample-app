@@ -133,7 +133,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import ObjectiveC;
+@import CoreBluetooth;
+@import Foundation;
 #endif
+
+#import <Orchextra/Orchextra.h>
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
@@ -268,5 +272,129 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)kLocaleOrcVuforiaUpdateErrorUnknownDesc SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+@class CBCentralManager;
+@class ORCEddystoneRegion;
+@protocol ORCActionInterface;
+@class ORCValidatorActionInterator;
+
+SWIFT_CLASS("_TtC9Orchextra19ORCCBCentralWrapper")
+@interface ORCCBCentralWrapper : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class) CoreBluetoothScanLevel scanLevel;)
++ (CoreBluetoothScanLevel)scanLevel SWIFT_WARN_UNUSED_RESULT;
++ (void)setScanLevel:(CoreBluetoothScanLevel)value;
+@property (nonatomic, strong) CBCentralManager * _Nullable centralManager;
+@property (nonatomic, copy) NSArray<ORCEddystoneRegion *> * _Nonnull availableRegions;
+- (nonnull instancetype)initWithActionInterface:(id <ORCActionInterface> _Nonnull)actionInterface validatorActionInteractor:(ORCValidatorActionInterator * _Nonnull)validatorActionInteractor requestWaitTime:(NSInteger)requestWaitTime OBJC_DESIGNATED_INITIALIZER;
+- (void)initializeCentralManager;
+- (void)startScanner;
+- (void)stopScanner;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+@class CBPeripheral;
+@class NSNumber;
+
+@interface ORCCBCentralWrapper (SWIFT_EXTENSION(Orchextra)) <CBCentralManagerDelegate>
+- (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)centralManager;
+- (void)centralManager:(CBCentralManager * _Nonnull)central willRestoreState:(NSDictionary<NSString *, id> * _Nonnull)dict;
+- (void)centralManager:(CBCentralManager * _Nonnull)central didDiscoverPeripheral:(CBPeripheral * _Nonnull)peripheral advertisementData:(NSDictionary<NSString *, id> * _Nonnull)advertisementData RSSI:(NSNumber * _Nonnull)RSSI;
+@end
+
+@class ORCEddystoneUID;
+@class ORCEddystoneTelemetry;
+@class NSTimer;
+enum proximity : NSInteger;
+
+SWIFT_CLASS("_TtC9Orchextra18ORCEddystoneBeacon")
+@interface ORCEddystoneBeacon : NSObject
+@property (nonatomic, copy) NSUUID * _Nullable peripheralId;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable rssiBuffer;
+@property (nonatomic, copy) NSURL * _Nullable url;
+@property (nonatomic, strong) ORCEddystoneUID * _Nullable uid;
+@property (nonatomic, copy) NSString * _Nullable eid;
+@property (nonatomic, strong) ORCEddystoneTelemetry * _Nullable telemetry;
+@property (nonatomic, strong) NSTimer * _Nullable proximityTimer;
+@property (nonatomic) NSInteger requestWaitTime;
+@property (nonatomic, readonly) double rssi;
+@property (nonatomic, readonly) enum proximity proximity;
+- (nonnull instancetype)initWithPeripheralId:(NSUUID * _Nonnull)peripheralId requestWaitTime:(NSInteger)requestWaitTime OBJC_DESIGNATED_INITIALIZER;
+- (void)updateRssiBufferWithRssi:(int8_t)rssi;
+- (BOOL)canBeSentToValidateAction SWIFT_WARN_UNUSED_RESULT;
+- (void)updateProximityWithCurrentProximity:(enum proximity)currentProximity;
+- (void)updateProximityTimer;
+- (void)resetProximityTimer;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+enum regionEvent : NSInteger;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9Orchextra18ORCEddystoneRegion")
+@interface ORCEddystoneRegion : NSObject <NSCoding>
+@property (nonatomic, readonly, strong) ORCEddystoneUID * _Nonnull uid;
+@property (nonatomic) enum regionEvent regionEvent;
+@property (nonatomic, readonly, copy) NSString * _Nonnull code;
+- (nullable instancetype)initWithJson:(NSDictionary * _Nonnull)json OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithUid:(ORCEddystoneUID * _Nonnull)uid code:(NSString * _Nonnull)code notifyOnEntry:(BOOL)notifyOnEntry notifyOnExit:(BOOL)notifyOnExit OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)encodeWithCoder:(NSCoder * _Nonnull)aCoder;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC9Orchextra21ORCEddystoneTelemetry")
+@interface ORCEddystoneTelemetry : NSObject
+@property (nonatomic, copy) NSString * _Nonnull tlmVersion;
+@property (nonatomic) double batteryVoltage;
+@property (nonatomic) double batteryPercentage;
+@property (nonatomic) float temperature;
+@property (nonatomic, copy) NSString * _Nonnull advertisingPDUcount;
+@property (nonatomic) NSTimeInterval uptime;
+- (nonnull instancetype)initWithTlmVersion:(NSString * _Nonnull)tlmVersion batteryVoltage:(double)batteryVoltage batteryPercentage:(double)batteryPercentage temperature:(float)temperature advertisingPDUcount:(NSString * _Nonnull)advertisingPDUcount uptime:(NSTimeInterval)uptime OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC9Orchextra15ORCEddystoneUID")
+@interface ORCEddystoneUID : NSObject
+@property (nonatomic, copy, getter=namespace, setter=setNamespace:) NSString * _Nonnull namespace_;
+@property (nonatomic, copy) NSString * _Nullable instance;
+@property (nonatomic, readonly, copy) NSString * _Nonnull uidCompossed;
+- (nonnull instancetype)initWithNamespace:(NSString * _Nonnull)namespace_ instance:(NSString * _Nullable)instance OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
+@end
+
+
+@interface ORCLog (SWIFT_EXTENSION(Orchextra))
+@end
+
+
+@interface ORCLog (SWIFT_EXTENSION(Orchextra))
+@end
+
+
+@interface ORCLog (SWIFT_EXTENSION(Orchextra))
+@end
+
+
+@interface ORCLog (SWIFT_EXTENSION(Orchextra))
+@end
+
+typedef SWIFT_ENUM(NSInteger, proximity) {
+  proximityUnknown = 0,
+  proximityInmediate = 1,
+  proximityNear = 2,
+  proximityFar = 3,
+};
+
+typedef SWIFT_ENUM(NSInteger, regionEvent) {
+  regionEventUndetected = 0,
+  regionEventEnter = 1,
+  regionEventStay = 2,
+  regionEventExit = 3,
+};
 
 #pragma clang diagnostic pop
