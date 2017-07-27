@@ -1,10 +1,18 @@
 {
-  "xcodeVersion" : "Xcode 8.3.2\nBuild version 8E2002",
-  "commitish" : "v2.1.4",
   "iOS" : [
     {
-      "hash" : "d9b0b06fa9ced8c9e9cf7d868429f9d60eb81da4acd3ff0acadc410ffd014472",
+      "hash" : "245e19c28099e3aec26da31cacf701414b41d0ecb891af7f46e8f63814e9d148",
       "name" : "Orchextra"
     }
+  ],
+  "commitish" : "v2.1.5",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
   ]
 }
