@@ -7,4 +7,5 @@ framework module Orchextra {
 
 module Orchextra.Swift {
     header "Orchextra-Swift.h"
+    requires objc
 }
