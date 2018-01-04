@@ -12,7 +12,8 @@
 		8F3EEBFC1D2141AD00490A84 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3EEBFB1D2141AD00490A84 /* WebKit.framework */; };
 		8F3EEBFE1D2141B600490A84 /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3EEBFD1D2141B600490A84 /* PassKit.framework */; };
 		8F447A491D34F01D00705861 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F447A481D34F01D00705861 /* SafariServices.framework */; };
-		8FDCDAB81F95DB7A005E5537 /* Orchextra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FDCDAB31F95DB17005E5537 /* Orchextra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FB2005A1FFE73B30006070A /* Orchextra.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB200571FFE72220006070A /* Orchextra.framework */; };
+		8FB2005B1FFE73DE0006070A /* Orchextra.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB200571FFE72220006070A /* Orchextra.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A90ABDA21C77224F003DC902 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A90ABDA11C77224F003DC902 /* CoreMedia.framework */; };
 		A92AD9B61BEB9ED7000B0BFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9B51BEB9ED7000B0BFD /* main.m */; };
 		A92AD9B91BEB9ED7000B0BFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A92AD9B81BEB9ED7000B0BFD /* AppDelegate.m */; };
@@ -47,27 +48,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8FDCDAB21F95DB17005E5537 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8FDCDAAB1F95DB17005E5537 /* Orchextra.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8F660C8C1DA2B8D0007B9551;
-			remoteInfo = Orchextra;
-		};
-		8FDCDAB41F95DB17005E5537 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8FDCDAAB1F95DB17005E5537 /* Orchextra.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A9C188A21BFCC75F0073EE33;
-			remoteInfo = VuforiaOrchextra;
-		};
-		8FDCDAB61F95DB17005E5537 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8FDCDAAB1F95DB17005E5537 /* Orchextra.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8F1593AA1DA3B18A003257C2;
-			remoteInfo = OrchextraTests;
-		};
 		A92AD9CB1BEB9ED7000B0BFD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A92AD9A91BEB9ED7000B0BFD /* Project object */;
@@ -84,7 +64,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8FDCDAB81F95DB7A005E5537 /* Orchextra.framework in Embed Frameworks */,
+				8FB2005B1FFE73DE0006070A /* Orchextra.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,7 +77,7 @@
 		8F3EEBFB1D2141AD00490A84 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		8F3EEBFD1D2141B600490A84 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
 		8F447A481D34F01D00705861 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		8FDCDAAB1F95DB17005E5537 /* Orchextra.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Orchextra.xcodeproj; path = "../../Desktop/orchextra-ios-sdk_OLD/Orchextra.xcodeproj"; sourceTree = "<group>"; };
+		8FB200571FFE72220006070A /* Orchextra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Orchextra.framework; path = Carthage/Build/iOS/Orchextra.framework; sourceTree = "<group>"; };
 		A90ABDA11C77224F003DC902 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		A92AD9B11BEB9ED7000B0BFD /* SampleOrchextra.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleOrchextra.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92AD9B51BEB9ED7000B0BFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -160,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB2005A1FFE73B30006070A /* Orchextra.framework in Frameworks */,
 				8F447A491D34F01D00705861 /* SafariServices.framework in Frameworks */,
 				8F3EEBFE1D2141B600490A84 /* PassKit.framework in Frameworks */,
 				8F3EEBFC1D2141AD00490A84 /* WebKit.framework in Frameworks */,
@@ -183,16 +164,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8FDCDAAC1F95DB17005E5537 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				8FDCDAB31F95DB17005E5537 /* Orchextra.framework */,
-				8FDCDAB51F95DB17005E5537 /* libVuforiaOrchextra.a */,
-				8FDCDAB71F95DB17005E5537 /* OrchextraTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		A92AD9A81BEB9ED7000B0BFD = {
 			isa = PBXGroup;
 			children = (
@@ -360,8 +331,8 @@
 		A93910891BEBA8020096A693 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8FB200571FFE72220006070A /* Orchextra.framework */,
 				8F0C706E1E3B6DEF00C27C9C /* Cartfile */,
-				8FDCDAAB1F95DB17005E5537 /* Orchextra.xcodeproj */,
 				8F447A481D34F01D00705861 /* SafariServices.framework */,
 				8F3EEBFD1D2141B600490A84 /* PassKit.framework */,
 				8F3EEBFB1D2141AD00490A84 /* WebKit.framework */,
@@ -522,12 +493,6 @@
 			mainGroup = A92AD9A81BEB9ED7000B0BFD;
 			productRefGroup = A92AD9B21BEB9ED7000B0BFD /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 8FDCDAAC1F95DB17005E5537 /* Products */;
-					ProjectRef = 8FDCDAAB1F95DB17005E5537 /* Orchextra.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A92AD9B01BEB9ED7000B0BFD /* SampleOrchextra */,
@@ -535,30 +500,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		8FDCDAB31F95DB17005E5537 /* Orchextra.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Orchextra.framework;
-			remoteRef = 8FDCDAB21F95DB17005E5537 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8FDCDAB51F95DB17005E5537 /* libVuforiaOrchextra.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libVuforiaOrchextra.a;
-			remoteRef = 8FDCDAB41F95DB17005E5537 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		8FDCDAB71F95DB17005E5537 /* OrchextraTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = OrchextraTests.xctest;
-			remoteRef = 8FDCDAB61F95DB17005E5537 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A92AD9AF1BEB9ED7000B0BFD /* Resources */ = {
@@ -766,7 +707,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gigigo.SampleOrchextra;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "70d2821d-6ccc-4f4f-8f63-43076f313af7";
+				PROVISIONING_PROFILE = "f6841f4f-c7c8-44a9-91f3-3d32bcd4eefc";
 				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Development;
 			};
 			name = Debug;
