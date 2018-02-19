@@ -1,0 +1,11 @@
+framework module Orchextra {
+  umbrella header "Orchextra.h"
+
+  export *
+  module * { export * }
+}
+
+module Orchextra.Swift {
+    header "Orchextra-Swift.h"
+    requires objc
+}
