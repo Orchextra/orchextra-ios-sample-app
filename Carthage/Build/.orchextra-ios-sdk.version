@@ -1,9 +1,9 @@
 {
-  "commitish" : "v2.1.9",
+  "commitish" : "v2.2.1",
   "iOS" : [
     {
       "name" : "Orchextra",
-      "hash" : "8238173c0ac0601b2e488f16b58ad67b0cc78aa75265c7611d9b44998500243f"
+      "hash" : "04a2085bd341796f1fd56ae4707a50c472ed6c0bb01f5c240ab38a13e78153fb"
     }
   ]
 }

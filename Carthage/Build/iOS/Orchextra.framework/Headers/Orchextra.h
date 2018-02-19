@@ -113,6 +113,7 @@ typedef NS_ENUM(NSUInteger, CoreBluetoothScanLevel)
 - (void)unbindUser;
 - (ORCUser *)currentUser;
 - (void)commitConfiguration;
+- (void)commitConfiguration:(void (^)(BOOL success, NSError *error))completion;
 
 // CUSTOM FIELDS
 
